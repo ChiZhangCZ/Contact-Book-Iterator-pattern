@@ -1,0 +1,20 @@
+package contactIterator;
+
+public class ContactIterator {
+	
+	public static void main(String[] args) {
+		
+		ContactPage cp = new ContactPage();
+		cp.addContact(new Contact("Chi","Zhang","0161"));
+		cp.addContact(new Contact("Andrew","Cole","0161"));
+		cp.addContact(new Contact("Aaron","Smith","0161"));
+		cp.addContact(new Contact("Chris","Hunter","0161"));
+		
+		Iterator i = cp.getIterator("A");
+		
+		while(i.hasNext()) {
+			System.out.println(i.next());
+		}
+	}
+
+}

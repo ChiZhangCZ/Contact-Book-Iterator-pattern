@@ -1,0 +1,38 @@
+package contactIterator;
+
+import java.util.ArrayList;
+
+public class ContactPage implements Container{
+	
+	private ArrayList<Contact> contacts = new ArrayList<Contact>(); 
+	
+	public Iterator getIterator() {
+		return new ContactIterator();
+	}
+	
+	private class ContactIterator implements Iterator{
+		
+		private int index;
+		
+		public boolean hasNext(){
+			if(index < contacts.size()) {
+				return true;
+			}
+			return false;
+		}
+		
+		public Contact next() {
+			return contacts.get(index++);
+		}
+		
+	}
+
+	public void addContact(Contact contact) {
+		
+		contacts.add(contact);
+		
+	}
+	
+	
+
+}

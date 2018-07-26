@@ -1,0 +1,19 @@
+INDEX VERSION 1.130+D:\chizh\Desktop\Iterator Pattern\.metadata\.plugins\org.eclipse.jdt.core
+3356439889.index
+3236561504.index
+4204794055.index
+828444484.index
+3060598083.index
+203370509.index
+491009114.index
+3228922276.index
+2529727200.index
+632593130.index
+127092065.index
+1148389549.index
+2875967015.index
+2716935270.index
+1228858521.index
+2674354809.index
+3337563493.index
+493531224.index

@@ -1,0 +1,66 @@
+package contactIterator;
+
+import java.util.ArrayList;
+
+public class ContactPage{
+	
+	private ArrayList<Contact> contacts = new ArrayList<Contact>(); 
+	
+	public Iterator getIterator() {
+		return new ContactIterator();
+	}
+	
+	private class ContactIterator implements Iterator{
+		
+		private int index;
+		
+		public boolean hasNext(){
+			if(index < contacts.size()) {
+				return true;
+			}
+			return false;
+		}
+		
+		public Contact next() {
+			return contacts.get(index++);
+		}
+		
+	}
+	
+//	private class ContactIterator implements Iterator{
+//		
+//		private String a;
+//		private int index;
+//		
+//		public ContactIterator(String a) {
+//			this.a=a;
+//		}
+//
+//	    @Override
+//	    public boolean hasNext() {
+//		    while(index < contacts.size()) {
+//		    	if(contacts.get(index).getFirstName().startsWith(a)) {
+//		    		return true;
+//		    	}
+//		    	index++;
+//		    }
+//		    return false;
+//	    }
+//
+//	    @Override
+//	    public Contact next() {
+//		 
+//		    return contacts.get(index++);
+//	    }
+//		
+//	}
+
+	public void addContact(Contact contact) {
+		
+		contacts.add(contact);
+		
+	}
+	
+	
+}
+
